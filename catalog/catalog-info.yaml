@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: my-function
+  description: Functions Buildpacks for Knative Accelerator Template
+  tags:
+    - app-accelerator
+    - functions
+    - buildpacks
+    - knative
+    - tanzu
+    - java
+    - spring
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=my-function'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: default-team
